@@ -7,30 +7,36 @@
         <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/e/ef/Stack_Overflow_icon.svg"/>
         <title>Tag Generator</title>
 
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script> 
+	    <script src="static/Get_Keywords.js"></script>
+
     </head>
 
     <body>
 
-        <div class="content">
-            <header>
-                <img src="https://upload.wikimedia.org/wikipedia/commons/f/f7/Stack_Overflow_logo.png">
-            </header>
-            
-            <main>
-                <h1>
-                    <font color="orange" size="6pt" face="arial">
-                    Write the question you want to ask on Stackoverflow to obtain the keywords matching to your question. 
-                    </font>
-                </h1>
+        <div class="container" style="padding:80px">
+
+            <div class="row">
+                <div class="panneau col-12">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/f/f7/Stack_Overflow_logo.png">
+                </div>
             </div>
-            </main>
+
+        <div class="container" style="padding:80px">
+            <form class="form-question"  role="form">
+            <h1 class="form-question-heading">
+                <font color="orange" size="6pt" face="arial">
+                Write the question you want to ask on Stackoverflow to obtain the keywords matching to your question. 
+                </font>
+            </h1>
+            <input type="question" id="inputquestion" name="text" class="form-question" placeholder="Enter your question">      
+            <button class="btn btn-lg btn-primary btn-block" type="button">Apply</button>
+            </form>   
+            </div> 
+
         </div>
-
-        <form method="POST">
-            <input name="text">
-            <input type="submit">
-        </form>
-
     </body>
 
 </html>
