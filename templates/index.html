@@ -17,26 +17,22 @@
     <body>
 
         <div class="container" style="padding:80px">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/f/f7/Stack_Overflow_logo.png">
+        </div>
 
-            <div class="row">
-                <div class="panneau col-12">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/f/f7/Stack_Overflow_logo.png">
+        <form>
+            <div class="form-group" style="padding:30px">
+                <label for="stackoverflow_question">
+                    <font color='orange' size='5'>Write the question you want to ask on Stackoverflow to obtain the keywords matching to your question</font>
+                </label>
+                <textarea class="form-control" id="stackoverflow_question" placeholder="Enter your question" rows="10"></textarea>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-12">
+                  <button type="submit" class="btn btn-primary">Submit</button>
                 </div>
             </div>
-
-        <div class="container" style="padding:80px">
-            <form class="form-question"  role="form">
-            <h1 class="form-question-heading">
-                <font color="orange" size="6pt" face="arial">
-                Write the question you want to ask on Stackoverflow to obtain the keywords matching to your question. 
-                </font>
-            </h1>
-            <input type="question" id="inputquestion" name="text" class="form-question" placeholder="Enter your question">      
-            <button class="btn btn-lg btn-primary btn-block" type="button">Apply</button>
-            </form>   
-            </div> 
-
-        </div>
+        </form>
     </body>
 
 </html>
