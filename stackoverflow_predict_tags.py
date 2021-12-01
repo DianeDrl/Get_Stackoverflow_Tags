@@ -1,13 +1,10 @@
 ###### Import ######
-import numpy as np
 import pandas as pd
 import nltk
 import re
 from bs4 import BeautifulSoup
 from nltk.corpus import stopwords
 from nltk.stem import WordNetLemmatizer
-from sklearn.feature_extraction.text import CountVectorizer, TfidfVectorizer
-import pickle
 from joblib import load
 nltk.download('punkt')
 nltk.download('wordnet')

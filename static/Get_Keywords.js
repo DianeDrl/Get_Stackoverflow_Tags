@@ -1,16 +1,18 @@
-$(function(){
-	$('button').click(function(){
-		var user = $('#inputquestion').val();
+$(document).ready(function() {
+
+	$('form').on('submit', function(event) {
+
 		$.ajax({
-			url: '/',
-			data: $('form').serialize(),
-			type: 'POST',
-			success: function(response){
-				console.log(response);
-            },
-			error: function(error){
-				console.log(error);
-			}
-		});
+			data : {
+				text : $('#stackoverflow_question').val()
+			},
+			type : 'POST',
+			url : '/get_keywords',
+			success : function(data){console.log(data)}
+		})
+
+		event.preventDefault();
+
 	});
+
 });

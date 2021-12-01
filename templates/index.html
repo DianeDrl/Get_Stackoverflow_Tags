@@ -8,9 +8,9 @@
         <title>Tag Generator</title>
 
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    
+        
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script> 
-	    <script src="static/Get_Keywords.js"></script>
+        <script src="static/Get_Keywords.js"></script>
 
     </head>
 
@@ -20,19 +20,20 @@
             <img src="https://upload.wikimedia.org/wikipedia/commons/f/f7/Stack_Overflow_logo.png">
         </div>
 
-        <form>
+        <form id="main_form">
             <div class="form-group" style="padding:30px">
                 <label for="stackoverflow_question">
                     <font color='orange' size='5'>Write the question you want to ask on Stackoverflow to obtain the keywords matching to your question</font>
                 </label>
-                <textarea class="form-control" id="stackoverflow_question" placeholder="Enter your question" rows="10"></textarea>
+                <textarea class="form-control" id="stackoverflow_question" name='text' type="text" placeholder="Enter your question" rows="10"></textarea>
             </div>
-            <div class="form-group">
-                <div class="col-sm-12">
-                  <button type="submit" class="btn btn-primary">Submit</button>
-                </div>
+            <div class="form-group" style="padding:30px">
+                <button type="submit" class="btn btn-primary">Submit</button>
             </div>
         </form>
+
     </body>
 
 </html>
+
+  

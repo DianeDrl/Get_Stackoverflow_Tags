@@ -11,15 +11,11 @@ def index():
     return render_template('index.html')
 
 # Route to get tags
-#@app.route('/api/get_keywords', methods=['POST'])
-@app.route('/', methods=['POST'])
-def api_predict_tags():
+@app.route('/get_keywords', methods=['GET','POST'])
+def get_keywords():
     question = request.form['text']
     tags = predict_tags(question)
     return jsonify(tags)
-    #return '''   
-                #<h1>For the question: {}</h1>
-                #<h1>Here are the proposed tags: {}</h1>'''.format(question, tags)
 
 # Run the application
 if __name__ == "__main__":
