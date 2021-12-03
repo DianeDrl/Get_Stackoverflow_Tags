@@ -8,7 +8,9 @@ $(document).ready(function() {
 			},
 			type : 'POST',
 			url : '/get_keywords',
-			success : function(data){console.log(data)}
+			success : function(data){
+				$("#tags").text(data);
+			}
 		})
 
 		event.preventDefault();
