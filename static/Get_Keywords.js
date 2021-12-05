@@ -9,7 +9,7 @@ $(document).ready(function() {
 			type : 'POST',
 			url : '/get_keywords',
 			success : function(data){
-				$("#tags").text(data);
+				$("#tags").text("TAGS: " + data);
 			}
 		})
 

@@ -14,22 +14,24 @@
 
     </head>
 
-    <body>
+    <body style="background-color:rgb(255,242,212);">
 
-        <div class="container" style="padding:80px">
+        <div class="container" style="padding:30px" align="center">
             <img src="https://upload.wikimedia.org/wikipedia/commons/f/f7/Stack_Overflow_logo.png">
         </div>
 
         <form id="main_form">
-            <div class="form-group" style="padding:30px">
+            <div class="form-group" style="padding:30px" align="center">
                 <label for="stackoverflow_question">
                     <font color='orange' size='5'>Write the question you want to ask on Stackoverflow to obtain the keywords matching to your question</font>
                 </label>
-                <textarea class="form-control" id="stackoverflow_question" name='text' type="text" placeholder="Enter your question" rows="10"></textarea>
+                <textarea class="form-control" id="stackoverflow_question" name='text' type="text" placeholder="Enter your question" rows="15"></textarea>
             </div>
-            <div class="form-group" style="padding:30px">
+            <div class="form-group" align="center">
                 <button type="submit" class="btn btn-primary">Submit</button>
-            <div class="tags" id="tags"></div> 
+            </div>
+            <div class="tags" id="tags" style="padding:0px; background-color:orange" align="center">
+            </div>
         </form>
 
     </body>
