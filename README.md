@@ -2,7 +2,7 @@
 
 This repo contains the codes of a web framework on which we can get approproate tags for a question that we would ask on Stackoverflow. Tags are predicted from a machine learning model using a Multilable Text classification algorithm, a Linear Support Vector Classification. 
 
-<img src="./flask.png"/>
+![alt text](https://github.com/DianeDrl/Get_Stackoverflow_Tags/blob/main/flask.png?raw=true)
 
 requirements.txt contains the recommended versions of the packages used for working API. 
 
@@ -28,4 +28,4 @@ templates/index.html contains the design of the web framework
 
 static/Get_Keywords.js contains AJAX request to print the predict tags on web framework 
 
-<img src="./Request_exemple.png"/>
+![alt text](https://github.com/DianeDrl/Get_Stackoverflow_Tags/blob/main/Request_exemple.png?raw=true)
