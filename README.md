@@ -2,6 +2,8 @@
 
 This repo contains the codes of a web framework on which we can get approproate tags for a question that we would ask on Stackoverflow. Tags are predicted from a machine learning model using a Multilable Text classification algorithm, a Linear Support Vector Classification. 
 
+<img src="./flask.png"/>
+
 requirements.txt contains the recommended versions of the packages used for working API. 
 
 ### Web Framework : Flask
@@ -25,3 +27,5 @@ stackoverflow_predict_tags.py contains the code to clean the text and then predi
 templates/index.html contains the design of the web framework 
 
 static/Get_Keywords.js contains AJAX request to print the predict tags on web framework 
+
+<img src="./Request_exemple.png"/>
